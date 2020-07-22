@@ -13,8 +13,6 @@
         </nav>
         <!--Slide Show-->
         <section>
-            <img class="mySlides" src="img_space.jpg" style="width: 100%;">
-            <img class="mySlides" src="img_cool.jpg" style="width: 100%;">
             <img class="mySlides" src="Pit Enterprises Hintergrund.png" style="width: 100%;">
         </section>
 
@@ -56,23 +54,5 @@
               Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
             </p>
           </footer>
-
-        <script>
-            //automatic slideshow
-            var Index = 0;
-            carousel();
-
-            function carousel(){
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for(i = 0; i < x.length; i++){
-                    x[i].style.display = "none";
-                }
-                Index ++;
-                if(Index > x.length) {Index = 1}
-                x[Index -1].style.display = "block";
-                setTimeout(carousel, 3000);
-            }
-        </script>
     </body>
 </html>
